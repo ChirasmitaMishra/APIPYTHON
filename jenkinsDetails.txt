@@ -1,0 +1,5 @@
+http://18.132.73.146:8080/view/Hocine/
+
+jenkins url - http://3.9.191.104:8080/
+username: consultants
+password: WelcomeItc@2022 
