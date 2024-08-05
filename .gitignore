@@ -1,3 +1,4 @@
 #exclude listed files
 hostDetails.txt
 jenkinsDetails.txt
+*.txt
