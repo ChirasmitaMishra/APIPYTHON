@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dbapi-deployment
+  labels:
+    app: dbapi
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: dbapi
+  template:
+    metadata:
+      labels:
+        app: dbapi
+    spec:
+      containers:
+      - name: dbapi
+        image: anusuyakal/dbapi
+        ports:
+        - containerPort: 5130

@@ -18,7 +18,7 @@ DATABASE = 'testdb'  # Replace with your PostgreSQL database name
 engine = create_engine(f'{DATABASE_TYPE}+{DBAPI}://{USER}:{PASSWORD}@{ENDPOINT}:{PORT}/{DATABASE}')
 
 # Specify the table name you want to read from
-table_name = 'customer_Priya'  # Replace with your table name
+table_name = 'customer_Smita'  # Replace with your table name
 
 @app.route('/data', methods=['GET'])
 def get_data():
@@ -32,4 +32,4 @@ def get_data():
     return jsonify(data)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5870, debug=True)
